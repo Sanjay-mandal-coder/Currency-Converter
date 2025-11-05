@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #333;
+  font-size: 2rem;
+}
+.container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  min-height: 45vh;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90vw;
+  max-width: 400px;
+}
+form {
+  margin: 2rem 0 1rem 0;
+}
+form select,
+form input {
+  width: 100%;
+  padding: 0.7rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+form input {
+  border: 1px solid lightgray;
+  font-size: 1rem;
+  height: 3rem;
+  padding-left: 0.5rem;
+}
+form button {
+  width: 100%;
+  font-size: 1.5rem;
+  background-color: #894d1c;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.9rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background-color: #5f2d04;
+}
+
+.dropdown {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.dropdown i {
+  font-size: 1.6rem;
+  color: #333;
+  margin: 0 0.8rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.dropdown i:hover {
+  transform: rotate(180deg);
+}
+
+.select-container img {
+  max-width: 2rem;
+}
+.select-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.4rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid lightgray;
+  background-color: #fafafa;
+}
+.select-container select {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: auto;
+}
+.msg {
+  margin: 1.5rem 0;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 95vw;
+    padding: 1.5rem;
+  }
+  h1 {
+    font-size: 1.6rem;
+  }
+  .dropdown {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .dropdown i {
+    transform: rotate(90deg);
+  }
+  form button {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
